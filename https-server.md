@@ -14,6 +14,12 @@
         proxy_pass          http://142.132.154.16:8545;
         proxy_read_timeout  90;
 
-        proxy_redirect      off;        
+        proxy_redirect      off;
+
+        # WebSocket support
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+
 }
   ```
