@@ -10,7 +10,7 @@ logrotate can automatically:
  ```bash
 
   ```bash
-/var/log/myapp.log {
+/path/to/your.log {
     size 100M
     rotate 7
     compress
