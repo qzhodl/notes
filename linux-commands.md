@@ -17,4 +17,4 @@ passwd <user name>
 mise self-update 2025.4.5
 
 # 6. change user and group
-sudo chown <user>:<group> /path/to/file
+sudo chown user:group /path/to/file
