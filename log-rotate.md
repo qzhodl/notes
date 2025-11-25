@@ -7,10 +7,10 @@ logrotate can automatically:
  1. Create a logrotate configuration file
  ```bash
  sudo vim /etc/logrotate.d/op-node
- ```bash
+ ```
 
-  ```bash
-/var/log/myapp.log {
+```bash
+/path/to/your.log {
     size 100M
     rotate 7
     compress
@@ -20,7 +20,7 @@ logrotate can automatically:
     notifempty
     su es es
 }
- ```bash
+```
 
 Explanation:
  - Rotate the log when it exceeds 100 MB
